@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="bg-[#2260cb] w-full h-screen flex items-center justify-center">
+        <section class="bg-white px-[20px] pb-[40px] pt-[30px] rounded-[7px] flex flex-col gap-y-[35px] justify-center">
+          <p class="text-center font-bold font-[40px]">TO DO LIST</p>  
+          <div class="flex gap-x-[25px] items-center">
+                <input type="text" class=" border-[2px] p-[10px] border-[#2260cb] rounded-[6px]" id="input">
+                <button class="bg-[#2260cb] text-white p-[12px] rounded-[6px] duration-150" id="btn" onclick="btnFunc()" onmouseover="hovered(button)" onmouseout="unhovered(button)">Add</button>
+            </div>
+            <div id="list" ></div>
+            <button id="deleteall" class="bg-[#2260cb] p-[15px] text-white rounded-[10px] hidden duration-150" onmouseover="hovered(deleteAll)" onmouseout="unhovered(deleteAll)">Delete All</button>
+        </section>
+    </main>
+  <script src="/app.js"></script>
+</body>
+</html>
